@@ -1,0 +1,1 @@
+#### Practising examples from [rust book](https://doc.rust-lang.org/book/)
