@@ -5,7 +5,10 @@ mod ownership_test;
 mod struct_test;
 mod struct_test_2;
 mod enum_test;
+mod module_test;
+pub mod module_test_2;
+
 
 fn main() {
-    println!("Hello, world!");
+    module_test::call();
 }
