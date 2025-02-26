@@ -8,6 +8,7 @@ mod enum_test;
 mod module_test;
 pub mod module_test_2;
 mod vector_test;
+mod string_test;
 
 fn main() {
     module_test::call();
