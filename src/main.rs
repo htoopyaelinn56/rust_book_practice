@@ -10,6 +10,7 @@ pub mod module_test_2;
 mod vector_test;
 mod string_test;
 mod hashmap_test;
+mod error_handling_test;
 
 fn main() {
     module_test::call();
