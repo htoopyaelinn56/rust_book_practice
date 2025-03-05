@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 struct Point<X1, Y1> {
     x: X1,
     y: Y1,
@@ -18,6 +20,30 @@ impl Point<i32, i32> {
     }
 }
 
+struct Pair<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Pair<T> {
+    fn new(x: T, y: T) -> Self {
+        Self { x, y }
+    }
+}
+
+impl<T> Pair<T>
+where
+    T: Display + PartialOrd,
+{
+    fn cmp_display(&self) {
+        if self.x >= self.y {
+            println!("The largest member is x = {}", self.x);
+        } else {
+            println!("The largest member is y = {}", self.y);
+        }
+    }
+}
+
 fn main() {
     let p1 = Point { x: 5, y: 10 };
     let p2 = Point { x: "Hello", y: 'c' };
@@ -27,4 +53,8 @@ fn main() {
     let p3 = p1.mix_up(p2);
 
     println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
+
+    let pair = Pair { x: 5, y: 10 };
+
+    pair.cmp_display();
 }

@@ -12,6 +12,7 @@ mod string_test;
 mod hashmap_test;
 mod error_handling_test;
 mod generics_test;
+mod trait_test;
 
 fn main() {
     module_test::call();
