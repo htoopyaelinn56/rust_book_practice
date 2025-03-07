@@ -34,6 +34,12 @@ impl Summary for Tweet {
     }
 }
 
+impl <T:Display> Summary for T {
+    fn summarize(&self) -> String {
+        format!("{}: {}", self.to_string(), &self.to_string())
+    }
+}
+
 fn returns_summarizable() -> impl Summary {
     Tweet {
         username: String::from("horse_ebooks"),

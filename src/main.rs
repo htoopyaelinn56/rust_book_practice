@@ -13,6 +13,7 @@ mod hashmap_test;
 mod error_handling_test;
 mod generics_test;
 mod trait_test;
+mod lifetime_test;
 
 fn main() {
     module_test::call();
