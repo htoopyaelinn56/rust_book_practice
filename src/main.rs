@@ -14,6 +14,7 @@ mod error_handling_test;
 mod generics_test;
 mod trait_test;
 mod lifetime_test;
+mod test_cases;
 
 fn main() {
     module_test::call();
