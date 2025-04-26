@@ -15,6 +15,7 @@ mod generics_test;
 mod trait_test;
 mod lifetime_test;
 mod test_cases;
+mod two_pointer_remove_duplicates;
 
 fn main() {
     module_test::call();
