@@ -16,6 +16,7 @@ mod trait_test;
 mod lifetime_test;
 mod test_cases;
 mod two_pointer_remove_duplicates;
+mod closure_test;
 
 fn main() {
     module_test::call();
