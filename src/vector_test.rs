@@ -17,6 +17,10 @@ fn main(){
 
     /// println!("{borrowed}"); <- occurs compile time error
 
+    /// mutable iteration
+    for i in v.iter_mut() {
+        *i *= -1;
+    }
 
 
     for i in &mut v {
