@@ -18,6 +18,7 @@ mod test_cases;
 mod two_pointer_remove_duplicates;
 mod closure_test;
 mod iterator_test;
+mod linked_list;
 
 fn main() {
     module_test::call();
