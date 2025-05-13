@@ -19,6 +19,7 @@ mod two_pointer_remove_duplicates;
 mod closure_test;
 mod iterator_test;
 mod linked_list;
+mod deref_drop_trait_test;
 
 fn main() {
     module_test::call();
