@@ -20,6 +20,7 @@ mod closure_test;
 mod iterator_test;
 mod linked_list;
 mod deref_drop_trait_test;
+mod reference_counting_test;
 
 fn main() {
     module_test::call();
