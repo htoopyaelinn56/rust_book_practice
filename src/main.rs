@@ -21,6 +21,8 @@ mod iterator_test;
 mod linked_list;
 mod deref_drop_trait_test;
 mod reference_counting_test;
+mod graph_datastructure;
+mod ref_cell_test;
 
 fn main() {
     module_test::call();
