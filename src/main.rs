@@ -24,6 +24,8 @@ mod reference_counting_test;
 mod graph_datastructure;
 mod ref_cell_test;
 mod memory_leak_test;
+mod thread_test;
+mod message_passing;
 
 fn main() {
     module_test::call();
