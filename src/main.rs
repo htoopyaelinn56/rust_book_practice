@@ -26,6 +26,7 @@ mod ref_cell_test;
 mod memory_leak_test;
 mod thread_test;
 mod message_passing;
+mod shared_state_concurrency_test;
 
 fn main() {
     module_test::call();
