@@ -28,6 +28,7 @@ mod thread_test;
 mod message_passing;
 mod shared_state_concurrency_test;
 mod race_api_call;
+mod pin_test;
 
 fn main() {
     race_api_call::test();
